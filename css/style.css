@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'banny';
+    font-family: 'Banny';
     src: url(/fonts/Banny-Round.otf);
 }
 * {
@@ -15,8 +15,10 @@ html {
     width: 100%;
     margin: auto;
 }
-body {
-    background-color: darkslategray;
+.block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .navigation {
     display: flex;
@@ -25,6 +27,10 @@ body {
     font-weight: bold;
     font-size: 12px;
     line-height: 18px;
+}
+.header {
+    position: relative;
+    z-index: 9999;
 }
 .nav-item {
     width: 133px;
@@ -41,4 +47,147 @@ body {
     margin-top: 25px;
     margin-left: 35px;
     margin-right: 35px;
+}
+.section--promo {
+    position: relative;
+    margin-top: -180px;
+    padding-top: 350px;
+    padding-bottom: 187px;
+    background: url('/img/header-bg.png') no-repeat center / cover;
+    color: #ffffff;
+    z-index: 999;
+}
+.section--promo::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+.block__promo {
+    position: relative;
+}
+.block__text {
+    position: relative;
+    max-width: 60px;
+    width: 100%;
+}
+.promo__text {
+    position: absolute;
+    top: 0;
+    left: -120px;
+    width: 261px;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+    color: #FFFFFF;
+    transform: rotate(-90deg);
+}
+.promo__main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section__subtitle {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+.promo__title {
+    font-family: "Banny";
+    font-size: 96px;
+    text-transform: uppercase;
+}
+.social__buttons {
+    display: flex;
+    flex-direction: column;
+}
+.social__link {
+    width: 60px;
+    height: 60px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.face {
+    background: url('/img/meta.svg') no-repeat center;
+}
+.twit {
+    background: url('/img/twit.svg') no-repeat center;
+}
+.inst {
+    margin-bottom: 0px;
+    background: url('/img/inst.svg') no-repeat center;
+}
+.button {
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 20px;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.buttons {
+    margin-top: 58px;
+}
+.button__promo {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.button--primary {
+    background: #E8C300;
+}
+.buton--secondary {
+    margin-left: 38px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+}
+.link--down {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    margin-left: -10px;
+    left: 50%;
+    bottom: -94px;
+    background: #ffffff url('/img/arrow-down.svg') no-repeat center;
+    border-radius: 50%;
+}
+.link--down::after {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    margin-top: -1px;
+    margin-left: -1px;
+    top: -25%;
+    left: -25%;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+}
+.title {
+    position: relative;
+}
+.title::after {
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    margin-left: -23px;
+    width: 60px;
+    height: 5px;
+    background: #E8C300;
+    border-radius: 50px;
 }
