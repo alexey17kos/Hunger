@@ -242,7 +242,7 @@ html {
     position: absolute;
     left: 50%;
     top: 50px;
-
+    letter-spacing: 0.5em;
 }
 .section--chef {
     position: relative;
@@ -337,4 +337,11 @@ html {
     position: absolute;
     top: 50%;
     right: 0;
+}
+.book-text {
+    position: absolute;
+    top: 2775px;
+    left: 37%;
+    color: rgba(51, 51, 51, 0.5);
+    font-size: 12px;
 }
