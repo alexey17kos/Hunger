@@ -101,7 +101,6 @@ html {
     text-transform: uppercase;
 }
 .promo__title {
-    font-family: "Banny";
     font-size: 96px;
     text-transform: uppercase;
 }
@@ -178,6 +177,7 @@ html {
     border-radius: 50%;
 }
 .title {
+    font-family: "Banny";
     position: relative;
 }
 .title::after {
@@ -190,4 +190,151 @@ html {
     height: 5px;
     background: #E8C300;
     border-radius: 50px;
+}
+.section--about_us {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.section__text {
+    display: flex;
+    max-width: 600px;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.section__title {
+    font-size: 36px;
+    text-transform: uppercase;
+}
+.block__text--subtitle {
+    margin-top: 40px;
+    font-size: 18px;
+    line-height: 28px;
+}
+.block__text--desc {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 24px;
+}
+.block__img {
+    position: relative;
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+}
+.block__img::after {
+    content: "";
+    border: 20px solid #E8C300;
+    margin-top: -125px;
+    width: 210px;
+    height: 210px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+.block__chef {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.subtitle--secondary {
+    position: absolute;
+    left: 50%;
+    top: 50px;
+
+}
+.section--chef {
+    position: relative;
+    background: url('/img/specialty-bg.png') no-repeat center / cover;
+    color: #ffffff;
+    z-index: 999;
+}
+.section--chef::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+.block__img--chef {
+    position: relative;
+    max-width: 588px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+.block__img--chef::after {
+    content: "";
+    border: 20px solid #E8C300;
+    margin-top: -125px;
+    width: 210px;
+    height: 210px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+.text__desc {
+    color: rgba(255, 255, 255, 0.9);
+}
+.block__choco {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.section--choco {
+    position: relative;
+    background: url('/img/specialtys-bg.png') no-repeat center / cover;
+    color: #ffffff;
+    z-index: 999;
+}
+.section--choco::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+.block__img--choco {
+    position: relative;
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+.block__img--choco::after {
+    content: "";
+    border: 20px solid #E8C300;
+    margin-top: -125px;
+    width: 210px;
+    height: 222px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+.block__book {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.block__img--book {
+    position: relative;
+    max-width: 588px;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+}
+.block__img--book::after {
+    content: "";
+    border: 20px solid #E8C300;
+    margin-top: -110px;
+    width: 186px;
+    height: 186px;
+    position: absolute;
+    top: 50%;
+    right: 0;
 }
